@@ -151,53 +151,46 @@
 % --------------------------------------------------- %
 
 % Resumo em português
-\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
-\begin{resumo}
+\include{resumo}
+% \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+% \begin{resumo}
 
-\txr{\textbf{COMENTARIO GERAL:}} O resumo de um trabalho tem uma estrutura bem definida, explicada a seguir:
-\textbf{1. \txr{Contextualização}}
-Identifica qual é a grande área onde seu trabalho esta inserido e qual é a importância dessa grande área.
-\textbf{2. \txr{Gaps ou vazios}}
-Aqui o autor diz que coisa na grande área precisa ser pesquisada. 
-Aqui é onde o autor deixa claro o que ainda não esta bem entendido, esta em aberto ou é controvertido. 
-Em resumo, o Gap é o vazio dessa grande área na qual  o trabalho esta inserido. 
-O comum é iniciar con as palavras: \textit{ainda}, \textit{Sem embargo}
-\textbf{\txr{3. Proposta}}
-Em esta parte o autor indica qual é o proposta e o objetivo do trabalho, evidentemente o objetivo deve estar relacionado con el Gap. O comum é iniciar con as frases: \textit{Este trabalho descreve ...}; \textit{Este trabalho reporta ...}; \textit{Aqui, ...}; \textit{Em este trabalho, é proposto, ... }.
-\textbf{\txr{4. Metodologia}}
-Aqui são descritos os métodos utilizados para a realização do trabalho.
-\textbf{\txr{5. Resultados}}
-Esta parte do resumo é extremadamente importante, não existe resumo que não tenha seção de resultados bem clara e detalhada, cabe ao autor identificar qual é seu principal resultado, para deixar bem claro no resumo.  Acontinuação um exemplo.
+% \end{resumo}
+% \begin{resumo}
 
-\textbf{1. \txr{Contextualização}}
-O câncer de pele é o tipo de câncer mais comum no Brasil. 
-O melanoma é seu subtipo mais mortal. 
-Portanto, é essencial que seja detectado em seus estágios iniciais, quando a taxa de sobrevivência ainda é alta. 
-Entretanto, ele é muito fácil de ser confundido por pintas comuns ou outros tipos de lesões de pele, até mesmo por especialistas. 
-\textbf{2. \txr{Gaps ou vazios}}
-Assim, alguma ferramenta de diagnóstico automatizado se torna indispensável. 
-Porém, as soluções automatizadas existentes não são muito superiores aos diagnósticos comuns. 
-A partir de $2012$ houveram grandes avanços na aplicação de redes neurais para a classificação de imagens. 
-A aplicação de redes neurais convolucionais profundas está superando a performance humana em diversas tarefas. 
-\textbf{3. \txr{Proposta}}
-O presente projeto de graduação faz uso de uma rede convolucional para tentar solucionar o problema de classificação binária de imagens de melanomas ou ceratoses seborréicas contra nevos. 
-A tarefa a solucionar foi obtida do desafio ISIC 2017, que provê um banco de dados para realizar o treino das redes e para validar a solução. 
-\textbf{4. \txr{Metodologia}}
-Para auxiliar e facilitar a tarefa foram usadas as técnicas de pré-processamento de imagens e transferência de aprendizado. 
-Um estudo aprofundado é feito sobre a arquitetura da rede usada, detalhando seu funcionamento interno. São treinados diversos classificadores para a tarefa dos quais o melhor obteve um desempenho equiparável a soluções de outras equipes. 
-\textbf{5. \txr{Resultados}}
-Especificamente, é obtido uma média de área sob a curva de característica de operação do receptor de $0.877$ quando testado no banco de dados do desafio ISIC 2017, ficando situado entre os 10 melhores resultados.
+% \txr{\textbf{COMENTARIO GERAL:}} O resumo de um trabalho tem uma estrutura bem definida, explicada a seguir:
+% \textbf{1. \txr{Contextualização}}
+% Identifica qual é a grande área onde seu trabalho esta inserido e qual é a importância dessa grande área.
+% \textbf{2. \txr{Gaps ou vazios}}
+% Aqui o autor diz que coisa na grande área precisa ser pesquisada. 
+% Aqui é onde o autor deixa claro o que ainda não esta bem entendido, esta em aberto ou é controvertido. 
+% Em resumo, o Gap é o vazio dessa grande área na qual  o trabalho esta inserido. 
+% O comum é iniciar con as palavras: \textit{ainda}, \textit{Sem embargo}
+% \textbf{\txr{3. Proposta}}
+% Em esta parte o autor indica qual é o proposta e o objetivo do trabalho, evidentemente o objetivo deve estar relacionado con el Gap. O comum é iniciar con as frases: \textit{Este trabalho descreve ...}; \textit{Este trabalho reporta ...}; \textit{Aqui, ...}; \textit{Em este trabalho, é proposto, ... }.
+% \textbf{\txr{4. Metodologia}}
+% Aqui são descritos os métodos utilizados para a realização do trabalho.
+% \textbf{\txr{5. Resultados}}
+% Esta parte do resumo é extremadamente importante, não existe resumo que não tenha seção de resultados bem clara e detalhada, cabe ao autor identificar qual é seu principal resultado, para deixar bem claro no resumo.  Acontinuação um exemplo.
 
-\textbf{Palavras-chave}: \textit{Deep-learning}; Redes neurais convolucionais; \textit{Transfer-learning}.
-\end{resumo}
+% \textbf{1. \txr{Contextualização}}
+% O câncer de pele é o tipo de câncer mais comum no Brasil. 
+% O melanoma é seu subtipo mais mortal. 
+% Portanto, é essencial que seja detectado em seus estágios iniciais, quando a taxa de sobrevivência ainda é alta. 
+% Entretanto, ele é muito fácil de ser confundido por pintas comuns ou outros tipos de lesões de pele, até mesmo por especialistas. 
+% \textbf{2. \txr{Gaps ou vazios}}
+% Assim, alguma ferramenta de diagnóstico automatizado se torna indispensável. 
+% Porém, as soluções automatizadas existentes não são muito superiores aos diagnósticos comuns. 
+% A partir de $2012$ houveram grandes avanços na aplicação de redes neurais para a classificação de imagens. 
+% A aplicação de redes neurais convolucionais profundas está superando a performance humana em diversas tarefas. 
+% \textbf{3. \txr{Proposta}}
+% O presente projeto de graduação faz uso de uma rede convolucional para tentar solucionar o problema de classificação binária de imagens de melanomas ou ceratoses seborréicas contra nevos. 
+% A tarefa a solucionar foi obtida do desafio ISIC 2017, que provê um banco de dados para realizar o treino das redes e para validar a solução. 
+% \textbf{4. \txr{Metodologia}}
+% Para auxiliar e facilitar a tarefa foram usadas as técnicas de pré-processamento de imagens e transferência de aprendizado. 
+% Um estudo aprofundado é feito sobre a arquitetura da rede usada, detalhando seu funcionamento interno. São treinados diversos classificadores para a tarefa dos quais o melhor obteve um desempenho equiparável a soluções de outras equipes. 
+% \textbf{5. \txr{Resultados}}
+% Especificamente, é obtido uma média de área sob a curva de característica de operação do receptor de $0.877$ quando testado no banco de dados do desafio ISIC 2017, ficando situado entre os 10 melhores resultados.
 
-% --------------------------------------------------- %
-%					Resumo em ingles	      	  	  %	
-% --------------------------------------------------- %
-\begin{resumo}[Abstract]
- \begin{otherlanguage*}{english}
-   \noindent xxxxx.
-   
-   \textbf{Keywords}: xxxx; yyyy.
- \end{otherlanguage*}
-\end{resumo}
+% \textbf{Palavras-chave}: \textit{Deep-learning}; Redes neurais convolucionais; \textit{Transfer-learning}.
+% \end{resumo}
