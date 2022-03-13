@@ -1,79 +1,39 @@
 % Ajustar esse \vspace de acordo com o necessário
 \vspace{-42pt}
-\txr{DICA:} Antes de começar a escrever ler o Anexo \ref{sec:DicasEscrita}.
 
-\section{Apresentação}
+A pesquisa e otimização de bancos de dados são assuntos em alta
+na área da computação há décadas, estando presentes em todos os
+tipos de sistemas e aplicativos utilizados mundialmente e em
+massa. No entanto, Conforme a industria se solidifica e
+amadurece, a competitividade e necessidade de sistemas mais
+eficientes também aumenta.
 
-A apresentação, segue a mesma estrutura do resumo só que, cada parte é explicada com maior detalhe. 
-Basicamente esta seção contem 
-\textbf{1. \txr{Contextualização}}: (\textit{i}) uma abordagem sobre a origem do tema em estudo; (\textit{ii}) as circunstancias que interferiram nesse processo;
-\textbf{2. \txr{Gaps ou vazios}}: (\textit{i}) o porquê da escolha do tema;
-(\textit{ii}) uma exposição sobre o objeto ou o problema a ser resolvido. 
-Caso o problema abordado seja muito amplo, será necessário delimitar o escopo da pesquisa a fim de que haja tempo e condições técnicas suficientes para que o projeto seja concluído.
-\textbf{3. \txr{Proposta}} Esta parte inicia (\textit{i}) com uma descrição geral na qual está inserida a proposta e termina com uma (\textit{ii}) descrição especifica totalmente relacionado ao tema em estudo. 
+Um problema de bancos de dados pode ser entendido como um
+problema de grafos quando analisa-se não só os valores a serem
+armazenados , mas suas conexões e relações \cite{graph-relation}.
+O primeiro artigo sobre grafos foi escrito pelo matemático
+Leonard Euler, em 1736, enquanto tentava descobrir se era
+possível atravesar as sete pontes da cidade de
+\textit{Königsberg}, na Prússia, sem repetir nenhuma
+\cite{graphteory}. Euler abstraiu os possíveis caminhos das ponte
+sem retas e suas intersecções em pontos, criando, talvez, o
+primeiro Grafo da história. Desde então, o tema tem ganhado cada
+vez mais tração, por ser altamente utilizado para abstração de
+relações entre objetos, principalmente no âmbito da computação.
 
-\section{Trabalhos Relacionados}
+\begin{figure}[!htbp]
+    \begin{center}
+        \caption{Pontes de \textit{Königsberg}}
+        \includegraphics[scale=0.2]{euler-ponte.png}
+        \legend{Fonte: Enciclopédia Britannica, 2010}
+    \end{center}
+\end{figure}
 
-Habilidades para a leitura de artigos são postas à prova ao fazer a seção de Trabalhos Relacionados. Isso exigirá que você leia dezenas de artigos, Você pode usar a abordagem de três passos para ajudar nesta tarefa.
-\begin{itemize}
-\item
-Primeiro, use um mecanismo de busca acadêmico como o \textit{Google Scholar} ou \textit{CiteSeer} e \textbf{algumas palavras-chave} bem escolhidas para achar de três a cinco artigos recentes altamente citados na área. Faça uma leitura de cada artigo para ter uma noção do trabalho e, em seguida, leia as seções de trabalho relacionadas. Você encontrará um resumo em miniatura dos trabalhos recentes e, talvez, se tiver sorte, uma indicação para um artigo de \textbf{\textit{survey} recente. Se você conseguir encontrar esse \textit{survey}, está feito. Leia o \textit{survey}, parabenizando-se pela sorte.}
-\item
-Caso contrário, na segunda etapa, encontre citações compartilhadas e nomes de autores repetidos na bibliografia. Estes são os trabalhos e pesquisadores-chave nessa área. Baixe os artigos principais. 
-\item
-Faça a leitura dos artigos selecionados. Se todos eles citarem um artigo-chave que você não encontrou antes, obtenha e leia-o, repetindo conforme necessário.
-\end{itemize}
+Dentro destes cenários, surge a necessidade de armazenar dados de
+grafos em bases de dados. No entanto, quando se lida com grafos
+com grande volume de dados, é preciso identificar o melhor SGBD
+para consulta, uma vez que, o sistema precisa de rapidez.
 
-Conforme você lê e avalia sua literatura, existem várias maneiras de organizar a informação. Uma maneira simples é desenvolver algum tipo de organizador gráfico que permite que você veja como as ideias dos autores se relacionam com as ideias de outros autores e sobre todo com sua pesquisa. Um tipo de organizador é chamado de \textbf{matriz de revisão da literatura}. Uma matriz de revisão permite que você compile detalhes sobre suas fontes, metodologias e conclusões, permitindo comparar e contrastar rapidamente os artigos estudados, ajudando-lo a identificar diferenças e semelhanças entre artigos sobre o tópico de pesquisa em estudo. 
-
-Cada matriz de revisão deve ter os mesmos três primeiros títulos de coluna: 
-(\textit{i}) título e ano de publicação,
-(\textit{ii}) objetivo,
-(\textit{iii}) proposta.
-Observe que, o objetivo e a proposta comumente estão explicitados no \textit{abstract} do artigo em estudo. 
-
-Para o caso de ML, uma recomendação para títulos de coluna a ser incluídos, podem ser:
-(\textit{iv}) características do modelo,
-(\textit{v}) conjunto de dados,
-(\textit{vi}) métricas de desempenho,
-(\textit{vii})  resultados,
-(\textit{viii}) relação com a pesquisa.
-
-Existem muitas maneiras de escolher os títulos das colunas e essas são apenas algumas sugestões. Ao criar sua própria matriz, escolha títulos de coluna que apoiem sua pergunta e objetivos de pesquisa. 
-
-Uma dica a ter em conta é: não tente preencher totalmente uma matriz de revisão antes de ler os artigos. Ler os artigos é uma forma importante de discernir as nuances entre os estudos. 
-
-Finalmente, tomando em conta a informação resumida na tabela, podemos começar a escrever a seção de Trabalhos relacionados.
-
-Uma coisa a ter em mente ao escrever a seção de Trabalhos relacionados é que ela deve ter a forma "como um funil". Para ser mais específico, o conteúdo deve ser amplo no início e focado no final.
-\begin{itemize}
-\item 
-\textbf{Introdução}. Comece com uma breve introdução da área de pesquisa básica à qual seu trabalho pertence. Por exemplo, se o seu trabalho é sobre a estimativa automática de idade usando imagens digitais de faces, você pode começar mencionando Análise de Imagem Facial Automática como a área básica. Você não precisa descer para o Computer Vision; Automated Face Image Analysis já é uma grande área de pesquisa. Selecionar alguns documentos de pesquisa para mostrar os avanços dessa área deve ser suficiente.
-\item 
-\textbf{Descrição dos trabalhos}. Agora é hora de mencionar outros documentos que tentam resolver o mesmo problema que o seu trabalho. Você pode organizá-los por ideia, em parágrafos, para que o leitor não se sinta perdido entre uma mistura de trabalhos de pesquisa. É bom mencionar as precisões, e é essencial mencionar o estado da arte se houver uma métrica de avaliação clara para identificá-lo. Para ter uma visão global dos trabalhos e como se relacionam usamos nossa matriz de revisão.
-\item 
-\textbf{Fechamento}. Agora você está chegando ao final desta seção. 
-Este é um bom lugar para resumir as abordagens com suas performances, vantagens e desvantagens, em uma tabela. Caso contrário, você pode escrever um parágrafo que resuma o mesmo conteúdo Por exemplo: \textit{Em geral, os trabalhos citados tem as seguintes restrições: usam técnicas xxx, precisam de xxxx e  em alguns casos não xxxxx.}. Em ambos os casos, o parágrafo final deve ser um ponteiro para o seu trabalho; você aponta as limitações nas abordagens existentes e, em seguida, afirma que tentará a abordagem X diferente do que foi tentado antes. Por exemplo: \textit{Diferentemente, a proposta deste trabalho está baseada no uso de xxx.}.
-\end{itemize}
-
-\chapter[Objetivos]{Objetivos}
-
-% \paragraph*{Objetivo Geral}
-\subsection{Objetivo Geral}
-O objetivo geral deste trabalho é encontrar o SGBD mais perfomante para consultas de um banco de dados de grafos altamente volumoso.
-
-
-
-\subsection{Objetivos Específicos}
-\begin{itemize}
-\item 
-Estudar sobre bancos de dados e grafos.
-\item 
-Pesquisar e aplicar um \textit{drivers} para bancos de dados.
-\item 
-Pesquisar e aplicar melhorias de perfomance para os \textit{drivers}
-\item 
-Aferir e comparar a perfomance de diferentes SGBD.
-\item
-Analisar os dados obtidos.
-\end{itemize}
+Sendo assim, este trabalho propõe implementar e testar os
+principais SGBD para consultas costumeiras de bancos de grafos,
+analisar os resultados e definir o mais eficiênte.

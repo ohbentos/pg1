@@ -287,7 +287,7 @@
 \selectlanguage{brazil}
 
 % >>> Retira espaço extra obsoleto entre as frases.
-\frenchspacing 
+\frenchspacing
 
 % --------------------------------------------------- %
 %				Elementos Pré-Textuais				  %
@@ -296,8 +296,10 @@
 
 %%%%%%%%
 \input{pretextual_pg}
+
+\include{Resumo}
 %%%%%%%
- 
+
 % --------------------------------------------------- %
 %					Lista de Figuras	      	  	  %	
 % --------------------------------------------------- %
@@ -325,37 +327,38 @@
 %			Lista de Abreviaturas e Siglas			  %	
 % --------------------------------------------------- %
 \begin{siglas}
-%%%%%%%%%%%%%  A %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  B %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  C %%%%%%%%%%%%%%%
-\item[CPID] Centro de Pesquisa, Inovação e Desenvolvimento
-%%%%%%%%%%%%%  D %%%%%%%%%%%%%%%
-\item [DL] \textit{Deep Learning}
-%%%%%%%%%%%%%  E %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  F %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  G %%%%%%%%%%%%%%%
-\item[GPU] \textit{Graphics Processing Unit} 
-%%%%%%%%%%%%%  H %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  I %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  J %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  K %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  L %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  M %%%%%%%%%%%%%%%
-\item[ML] \textit{Machine Learning}
-%%%%%%%%%%%%%  N %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  O %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  P %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  Q %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  R %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  S %%%%%%%%%%%%%%%
-\item[SGDB] Sistemas Gerenciadores de Banco de Dados
-%%%%%%%%%%%%%  T %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  U %%%%%%%%%%%%%%%
-\item[UFES] Universidade Federal do Espírito Santo
-%%%%%%%%%%%%%  V %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  W %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  Y %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  Z %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  A %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  B %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  C %%%%%%%%%%%%%%%
+	\item[CPU] \textit{Central Processing Unit}
+	\item[CPID] Centro de Pesquisa, Inovação e Desenvolvimento
+	%%%%%%%%%%%%%  D %%%%%%%%%%%%%%%
+	\item [DL] \textit{Deep Learning}
+	%%%%%%%%%%%%%  E %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  F %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  G %%%%%%%%%%%%%%%
+	\item[GPU] \textit{Graphics Processing Unit}
+	%%%%%%%%%%%%%  H %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  I %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  J %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  K %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  L %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  M %%%%%%%%%%%%%%%
+	\item[ML] \textit{Machine Learning}
+	%%%%%%%%%%%%%  N %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  O %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  P %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  Q %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  R %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  S %%%%%%%%%%%%%%%
+	\item[SGDB] Sistemas Gerenciadores de Banco de Dados
+	%%%%%%%%%%%%%  T %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  U %%%%%%%%%%%%%%%
+	\item[UFES] Universidade Federal do Espírito Santo
+	%%%%%%%%%%%%%  V %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  W %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  Y %%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  Z %%%%%%%%%%%%%%%
 \end{siglas}
 
 % --------------------------------------------------- %
@@ -383,39 +386,29 @@
 \chapter[Introdução]{Introdução}
 \input{Introducao}
 
+\chapter[Justificativas]{Justificativas}
+\input{Justificativas}
+
+\chapter[Objetivos]{Objetivos}
+\input{Objetivos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifisTipoDocumento
 \chapter[Metodologia e etapas de desenvolvimento]{Metodologia e etapas de desenvolvimento}
 \input{Metodologia}
-\else
-\chapter[Proposta]{Proposta}
-\input{proposta}
-\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifisTipoDocumento
 \chapter[Alocação de Recursos]{Alocação de Recursos}
 \input{Recursos}
-\else
-\chapter[Resultados]{Resultados}
-\input{resultados}
-\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifisTipoDocumento
-\else
-\chapter[Conclusão e Trabalhos Futuros]{Conclusão e Trabalhos Futuros}
-\input{conclusao}
-\fi
 
 % --------------------------------------------------- %
 %				Elementos Pós-Textuais				  %
