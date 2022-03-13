@@ -1,37 +1,41 @@
 \section{Metodologia Adotada}
 
-De acordo com \citeonline{metodologia}, este trabalho pode ser classificado como aplicado, por tentar
-solucionar um problema especifico em uma circunstância
-particular. É classificada como descritiva, visto que seus
-objetivos são a coleta, analise e interpretação dos dados dados. Do
-ponto de vista dos procedimentos técnicos, é classificado como
+De acordo com \citeonline{metodologia}, este trabalho pode ser
+classificado como aplicado, por tentar solucionar um problema
+especifico em uma circunstância particular. É classificado como
+descritivo, visto que seus objetivos são a coleta, analise e
+interpretação dos dados dados. Do ponto de vista dos
+procedimentos técnicos, é classificado como experimental, dado
+que, o trabalho busca identificar as variáveis do processo e suas
+dependências, e, mediante analise quantitativa, obter conclusões
+acerca dos dados coletados.
 
+% O trabalho será desenvolvido conforme as etapas apresentadas a
+% seguir.
 
+% \begin{itemize}
+%     \item
+%           \textbf{Etapa 1.} Estudo teórico:
+%           estudo sobre Grafos, Bancos de Dados e suas otimizações.
+%           %   (\textit{i}) estudo sobre xxxx;
+%           %   (\textit{ii}) revisão a respeito de xxxx.
+%     \item
+%           \textbf{Etapa 2.} Especificações do projeto:
+%           definir os SGDB a serem avaliados.
+%           %   (\textit{i}) dimensionar as xxxx;
+%           %   (\textit{ii}) definir o xxxxx;
+%     \item
+%           \textbf{Etapa 3.} Desenvolvimento do sistema:
+%           pesquisar e testar os melhores \textit{drivers} para cada SGBD;
+%           %   (\textit{i}) realizar as xxxx;
+%           %   (\textit{ii}) desenvolver o xxxx.
+%     \item
+%           \textbf{Etapa 4.} Teste do sistema:
 
-O trabalho será desenvolvido conforme as etapas apresentadas a
-seguir.
-
-\begin{itemize}
-    \item
-          \textbf{Etapa 1.} Estudo teórico:
-          (\textit{i}) estudo sobre xxxx;
-          (\textit{ii}) revisão a respeito de xxxx.
-    \item
-          \textbf{Etapa 2.} Especificações do projeto:
-          (\textit{i}) dimensionar as xxxx;
-          (\textit{ii}) definir o xxxxx;
-    \item
-          \textbf{Etapa 3.} Desenvolvimento do sistema:
-          (\textit{i}) realizar as xxxx;
-          (\textit{ii}) desenvolver o xxxx.
-    \item
-          \textbf{Etapa 4.} Teste do sistema:
-          (\textit{i}) realizar xxxx;
-          (\textit{i}) fazer xxxx;
-    \item
-          \textbf{Etapa 5.} Documentação:
-          (\textit{i}) Documentar o projeto de graduação.
-\end{itemize}
+%     \item
+%           \textbf{Etapa 5.} Documentação:
+%           (\textit{i}) Documentar o projeto de graduação.
+%  \end{itemize}
 
 \section{Cronograma de Trabalho}
 
@@ -48,7 +52,7 @@ seguir.
 
 %2. DEFINIMOS AS ATIVIDADES COMO COMANDOS VIA \newcommand{\name_comand}{value}
 %primeira atividade
-\newcommand{\AtvAlgRotI}{Estudo sobre bancos de dados e otimizações}
+\newcommand{\AtvAlgRotI}{Estudo sobre bancos de dados e suas otimizações}
 %segunda atividade
 \newcommand{\AtvAlgRotII}{Estudo sobre grafos}
 %terceira atividade
@@ -64,7 +68,7 @@ seguir.
 
 %3. DEFINIMOS OS ROTULOS DAS AS ATIVIDADES A SER USADAS NO DIAGRAMA DE GANTT USANDO O COMANDO \newcommand{\name_comand}{value}
 %ROTULOS DE ATIVIDADES
-\newcommand{\RTLAtvAlgRotI}{ETAP 1} %rotulo da primeira atividade
+\newcommand{\RTLAtvAlgRotI}{ATV 1} %rotulo da primeira atividade
 \newcommand{\RTLAtvAlgRotII}{ATV 2} %rotulo da segunda atividade
 \newcommand{\RTLAtvAlgRotIII}{ATV 3} %rotulo da terceira atividade
 \newcommand{\RTLAtvAlgRotIV}{ATV 4} %rotulo da quarta atividade
@@ -73,10 +77,16 @@ seguir.
 \newcommand{\RTLAtvAlgRotVII}{ATV 7} %rotulo da sétima atividade
 
 %4. COMENTARIOS SOBRE O DIAGRAMA DE ATIVIDADES
-Apresenta-se nesta seção uma previsão do cronograma do plano de trabalho. O tempo total deste é de \DuracionPlanoMeses\ meses.
+Apresenta-se nesta seção uma previsão do cronograma do plano de
+trabalho. O tempo total deste é de \DuracionPlanoMeses\ meses.
 
-Na Tabela \ref{Tab1}, são detalhadas as atividades que se pretendem realizar para o desenvolvimento do plano de trabalho.
-Assim na primeira coluna da tabela são definidos os rótulos de cada atividade e na segunda coluna é feita uma descrição da atividade que se pretende realizar. Finalmente na Figura \ref{figDAGRTEMPACT001} é apresentado o diagrama de tempos das atividades indicadas na Tabela \ref{Tab1}.
+Na Tabela \ref{Tab1}, são detalhadas as atividades que se
+pretendem realizar para o desenvolvimento do plano de trabalho.
+Assim na primeira coluna da tabela são definidos os rótulos de
+cada atividade e na segunda coluna é feita uma descrição da
+atividade que se pretende realizar. Finalmente na Figura
+\ref{figDAGRTEMPACT001} é apresentado o diagrama de tempos das
+atividades indicadas na Tabela \ref{Tab1}.
 
 %5. CRIAÇÃO DA TABELA DE ATIVIDADES, OBSERVE QUE AQUI SÃO USADOS OS COMANDOS DAS ATIVIDADES
 \begin{table}[!htbp]
@@ -96,7 +106,7 @@ Assim na primeira coluna da tabela são definidos os rótulos de cada atividade 
             \RTLAtvAlgRotV   & \AtvAlgRotV   \\
             \hline
             \RTLAtvAlgRotVI  & \AtvAlgRotVI  \\
-            \hline
+            % \hline
             \hline
             \RTLAtvAlgRotVII & \AtvAlgRotVII \\
             \hline
@@ -129,7 +139,7 @@ Assim na primeira coluna da tabela são definidos os rótulos de cada atividade 
                 group height=.3,
                 group peaks width=.2]{1}{12}
             %labels
-            \gantttitle{2014}{12}\\
+            \gantttitle{2022}{12}\\
             \gantttitle{\tiny JAN}{1}
             \gantttitle{\tiny FEV}{1}
             \gantttitle{\tiny MAR}{1}
