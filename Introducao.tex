@@ -1,39 +1,41 @@
 % Ajustar esse \vspace de acordo com o necessário
 \vspace{-42pt}
 
-A pesquisa e otimização de bancos de dados são assuntos em alta
+A pesquisa e a otimização de bancos de dados são assuntos em alta
 na área da computação há décadas, estando presentes em todos os
-tipos de sistemas e aplicativos utilizados mundialmente e em
-massa. No entanto, Conforme a industria se solidifica e
-amadurece, a competitividade e necessidade de sistemas mais
-eficientes também aumenta.
+tipos de sistemas e aplicativos utilizados mundialmente. No
+entanto, conforme a industria se solidifica e amadurece, a
+competitividade e a necessidade de sistemas mais eficientes
+também aumentam.
 
 Um problema de bancos de dados pode ser entendido como um
 problema de grafos quando analisa-se não só os valores a serem
-armazenados , mas suas conexões e relações \cite{graph-relation}.
+armazenados, mas suas conexões e relações \cite{graph-relation}.
 O primeiro artigo sobre grafos foi escrito pelo matemático
 Leonard Euler, em 1736, enquanto tentava descobrir se era
-possível atravesar as sete pontes da cidade de
+possível atravessar as sete pontes da cidade de
 \textit{Königsberg}, na Prússia, sem repetir nenhuma
-\cite{graphteory}. Euler abstraiu os possíveis caminhos das ponte
-sem retas e suas intersecções em pontos, criando, talvez, o
-primeiro Grafo da história. Desde então, o tema tem ganhado cada
-vez mais tração, por ser altamente utilizado para abstração de
-relações entre objetos, principalmente no âmbito da computação.
+\cite{graphteory}.  A \autoref{euler-ponte} ilustra o problema.
+Euler abstraiu os possíveis caminhos das pontes em retas e suas
+intersecções em pontos, criando, talvez, o primeiro Grafo da
+história. Desde então, o tema tem ganhado cada vez mais tração,
+por ser altamente utilizado para abstração de relações entre
+objetos, principalmente no âmbito da computação.
 
 \begin{figure}[!htbp]
     \begin{center}
-        \caption{Pontes de \textit{Königsberg}}
+        \caption{\label{euler-ponte}Pontes de \textit{Königsberg}}
         \includegraphics[scale=0.2]{euler-ponte.png}
         \legend{Fonte: Enciclopédia Britannica, 2010}
     \end{center}
 \end{figure}
 
 Dentro destes cenários, surge a necessidade de armazenar dados de
-grafos em bases de dados. No entanto, quando se lida com grafos
+grafos em bancos de dados. No entanto, quando se lida com grafos
 com grande volume de dados, é preciso identificar o melhor SGBD
-para consulta, uma vez que, o sistema precisa de rapidez.
+para consulta, visando a rapidez do sistema.
 
 Sendo assim, este trabalho propõe implementar e testar os
 principais SGBD para consultas costumeiras de bancos de grafos,
-analisar os resultados e definir o mais eficiênte.
+analisar os resultados e definir o mais eficiente e adequado à
+situação.
