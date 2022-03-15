@@ -1,3 +1,92 @@
 \section{Teoria de Grafos}
+Um grafo G qualquer é composto de um conjunto de nós (também
+chamados de pontos ou vértices) ligados a outros nós por meio de
+arestas, que representam uma ligação atrelada a uma relação entre
+os nós \cite{west_2018}. A figura \autoref{meu-grafo} ilustra um
+Grafo de seis nós {$n1,n2,n3,n4,n5,n6$} cujas ligações podem ser
+representadas pelos nós percententes àquela aresta, portanto,
+{$n4n1,n1n5,n1n6,n6n2,n2n3$} são as arestas do Grafo ilustrado.
+
+
+\begin{figure}[!htbp]
+    \begin{center}
+        \caption{\label{meu-grafo}Exemplo de Grafo com seis nós}
+        \includegraphics[scale=0.5]{meu-grafo.png}
+        \legend{Fonte: Produção do próprio autor.}
+    \end{center}
+\end{figure}
+
+
+% De acordo com \cite{diestel_2017}, alguns conceitos fundamentais de grafos:
+Alguns conceitos fundamentais de grafos, de acordo com
+\citeonline{diestel_2017}
+
+\begin{itemize}
+    \item
+          \textbf{Ordem} : indica o número de vértices de um grafo.
+    \item
+          \textbf{Extremos} : dois vértices que formam uma
+          aresta são chamados de extremos.
+    \item
+          \textbf{Adjacência} : dois vértices $x,y$ de G são
+          adjacentes quando a aresta $xy$ percente a G; duas
+          arestas são adjacentes se possuem um fim em comum.
+    \item
+          \textbf{Incidência} : se um vértice é o extremo de um
+          nó, eles são incidentes.
+    \item
+          \textbf{Caminho} : é uma sequência de nós que une uma
+          sequência distinta de arestas.
+    \item
+          \textbf{Distância} : é o menor número de arestas entre
+          dois nós.
+    \item
+          \textbf{Diâmetro} : é o maior número de arestas
+          distintas que se atravessa entre dois nós.
+    \item
+          \textbf{\textit{Loop}} : é uma aresta que conecta um nó
+          a si mesmo.
+
+
+\end{itemize}
+
+Na ciência da computação, grafos são utilizados em estruturas de
+dados para a representação de redes de telecomunicações,
+problemas de logística, design de circuitos elétricos, diagramas
+de árvore, árvore de decisões, algoritmo de Dijkstra, etc.
 
 \section{Bancos de Dados}
+De acordo com \citeonline{database_2011}, bancos de dados são
+estruturas que contêm dados inter-relacionados, tipicamente
+armazenados eletronicamente em sistemas de computadores,
+gerenciados por SGBD. Constituem parte essencial de qualquer
+comércio na atualidade, pois a todo momento usuários interagem
+com bancos de dados ao navegar na internet, mesmo que
+inconscientemente.
+
+
+Os SGBD são úteis para proporcionar formas de armazenar e retirar
+informações de bancos de forma forma simples e eficiênte, ou
+seja, são responsáveis pelo gerenciamento dos bancos de dado.
+Permitem ao usuário criar e especificar esquemas (forma na qual
+os dados estão organizados) para os dados, fazer consultas ao
+banco, fazer consultas concorrentes aos mesmos dados, etc
+\cite{database-complete}. Em suma, provê ao usuário uma interface mais
+abstrata entre os dados e a aplicação.
+
+
+Em 1970, Ted Codd, um matemático e pesquisador da IBM propôs que
+os sistemas de bancos de dados apresentassem aos usuários dados
+organizados em forma de tabelas chamadas relações \cite{codd},
+que são conexões lógicas entre diferentes tabelas, baseadas em
+suas interações. Esses sistema é conhecido atualmente como bancos
+de dados relacionais. Este modelo contém uma ou mais tabelas com
+linhas e colunas; cada linha possui uma identificação (id) única
+e cada coluna representa um atributo. Também é possível associar
+linhas de diferentes tabelas gerando uma chave estrangeira.
+
+
+A linguagem de programação dominante, utilizada por praticamente
+todos os bancos de dados relacionais, é a linguagem SQL
+(\textit{Structured Query Language}), responsável pela
+administração de permissões, consulta e manipulação dos dados.

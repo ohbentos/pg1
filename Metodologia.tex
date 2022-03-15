@@ -10,64 +10,32 @@ que, o trabalho busca identificar as variáveis do processo e suas
 dependências, e, mediante análise quantitativa, obter conclusões
 acerca dos dados coletados.
 
-% O trabalho será desenvolvido conforme as etapas apresentadas a
-% seguir.
 
-% \begin{itemize}
-%     \item
-%           \textbf{Etapa 1.} Estudo teórico:
-%           estudo sobre Grafos, Bancos de Dados e suas otimizações.
-%           %   (\textit{i}) estudo sobre xxxx;
-%           %   (\textit{ii}) revisão a respeito de xxxx.
-%     \item
-%           \textbf{Etapa 2.} Especificações do projeto:
-%           definir os SGDB a serem avaliados.
-%           %   (\textit{i}) dimensionar as xxxx;
-%           %   (\textit{ii}) definir o xxxxx;
-%     \item
-%           \textbf{Etapa 3.} Desenvolvimento do sistema:
-%           pesquisar e testar os melhores \textit{drivers} para cada SGBD;
-%           %   (\textit{i}) realizar as xxxx;
-%           %   (\textit{ii}) desenvolver o xxxx.
-%     \item
-%           \textbf{Etapa 4.} Teste do sistema:
+A princípio, serão feitos estudos de Teoria de Grafos, das
+diversas SGDB e suas peculiaridades e de métodos de aumento de
+perfomance em bancos de dados. Em seguida, serão escolhidos os
+SGDB mais interessantes e pertinentes ao uso de dados de Grafos
+volumosos. Após a escolha, serão realizados testes para avaliar o
+desempenho de cada SGDB a partir do tempo de consulta de
+operações comuns de Grafos. Finalmente, será feita a análise dos
+dados coletados para levantamento de uma conclusão sobre o SGDB
+mais performante.
 
-%     \item
-%           \textbf{Etapa 5.} Documentação:
-%           (\textit{i}) Documentar o projeto de graduação.
-%  \end{itemize}
 
 \section{Cronograma de Trabalho}
 
-% \txr{DICA:} O seguinte é um \textit{template} de \href{https://pt.wikipedia.org/wiki/Diagrama_de_Gantt}{Diagrama de Gantt} para \LaTeX. Para entender a organização do \textit{template} é necessário compreender que faz o comando \verb|\newcommand{\name_comand}{value}|: resumidamente, ele permite criar o comando  \verb|\name_comand|, tal que, cada vez que usamos no escrito o comando \verb|\name_comand| seu valor representado pela \textit{string} \verb|value| é incluído no texto. Então, a logica do \textit{template} é a seguinte: 
-% (1) definimos na variável \verb|\DuracionPlanoMeses| o número de meses usados para a implementação do projeto; 
-% (2) definimos como comandos as atividades a ser feitas; 
-% (3) definimos como comandos os rótulos relacionados com cada atividade, tal que, os referidos rótulos são usados no diagrama de Gantt; 
-% (4) escrevemos alguns comentários sobre o diagrama de atividades;
-% (5) Criamos a tabela de atividades, aqui são usados os comandos definidos no passo (2);
-% (6) Criamos o Diagrama de Gantt das Atividades, aqui são usados os comandos dos rótulos definidos no passo (3). 
 
-%1. DEFINIMOS O NUMERO DE MESES NOS QUAIS SERÁ IMPLEMENTADO O PROJETO
-\newcommand{\DuracionPlanoMeses}{8}
-
+\newcommand{\DuracionPlanoMeses}{5}
 %2. DEFINIMOS AS ATIVIDADES COMO COMANDOS VIA \newcommand{\name_comand}{value}
 %primeira atividade
 \newcommand{\AtvAlgRotI}{Estudo sobre bancos de dados e suas otimizações}
-%segunda atividade
 \newcommand{\AtvAlgRotII}{Estudo sobre grafos}
-%terceira atividade
-\newcommand{\AtvAlgRotIII}{Programação da comunicação com o \textit{driver}}
-%quarta atividade
+\newcommand{\AtvAlgRotIII}{Programação da comunicação com o SGDB}
 \newcommand{\AtvAlgRotIV}{Testes de perfomance}
-%quinta atividade
-\newcommand{\AtvAlgRotV}{Análise e discussão dos testes de perfomance}
-%quinta atividade
+\newcommand{\AtvAlgRotV}{Avaliação dos testes de perfomance}
 \newcommand{\AtvAlgRotVI}{Escrita do projeto de graduação}
-%quinta atividade
 \newcommand{\AtvAlgRotVII}{Defesa do projeto de graduação}
 
-%3. DEFINIMOS OS ROTULOS DAS AS ATIVIDADES A SER USADAS NO DIAGRAMA DE GANTT USANDO O COMANDO \newcommand{\name_comand}{value}
-%ROTULOS DE ATIVIDADES
 \newcommand{\RTLAtvAlgRotI}{ATV 1} %rotulo da primeira atividade
 \newcommand{\RTLAtvAlgRotII}{ATV 2} %rotulo da segunda atividade
 \newcommand{\RTLAtvAlgRotIII}{ATV 3} %rotulo da terceira atividade
@@ -77,7 +45,7 @@ acerca dos dados coletados.
 \newcommand{\RTLAtvAlgRotVII}{ATV 7} %rotulo da sétima atividade
 
 %4. COMENTARIOS SOBRE O DIAGRAMA DE ATIVIDADES
-Apresenta-se nesta seção uma previsão do cronograma do plano de
+Apresenta-se nest seção uma previsão do cronograma do plano de
 trabalho. O tempo total previso para a conclusão é de
 \DuracionPlanoMeses\ meses.
 
@@ -91,7 +59,7 @@ atividades indicadas na Tabela \ref{Tab1}.
 
 %5. CRIAÇÃO DA TABELA DE ATIVIDADES, OBSERVE QUE AQUI SÃO USADOS OS COMANDOS DAS ATIVIDADES
 \begin{table}[!htbp]
-    \begin{center}\begin{tabular}{c|p{14.00cm}}
+    \begin{center}\begin{tabular}{c|p{13.00cm}}
             \hline
             Rótulo           & Atividade     \\
             \hline
@@ -107,7 +75,6 @@ atividades indicadas na Tabela \ref{Tab1}.
             \RTLAtvAlgRotV   & \AtvAlgRotV   \\
             \hline
             \RTLAtvAlgRotVI  & \AtvAlgRotVI  \\
-            % \hline
             \hline
             \RTLAtvAlgRotVII & \AtvAlgRotVII \\
             \hline
@@ -118,52 +85,23 @@ atividades indicadas na Tabela \ref{Tab1}.
         Lista de atividades.
     }
     \label{Tab1}
+    % \legend{Fonte: Produção do próprio autor.}
 \end{table}
 
-%6. CRIAÇÃO DO DIAGRAMA DE GANTT DAS ATIVIDADES, OBSERVE QUE AQUI SÃO USADOS OS COMANDOS DOS  ROTULOS DAS ATIVIDADES
-\begin{figure}[!htbp]
-    \begin{center}
-        \begin{ganttchart}[
-                x unit = 0.8cm,
-                y unit title=0.5cm,
-                y unit chart=0.5cm,
-                hgrid,vgrid,
-                title label anchor/.style={below=-1.6ex},
-                title height=1,
-                bar/.style={fill=gray!50},
-                %group/.style={draw=black},
-                incomplete/.style={fill=white},
-                progress label text={},
-                bar height=0.7,
-                %group right shift=0,
-                group top shift=.6,
-                group height=.3,
-                group peaks width=.2]{1}{12}
-            %labels
-            \gantttitle{2022}{12}\\
-            \gantttitle{\tiny JAN}{1}
-            \gantttitle{\tiny FEV}{1}
-            \gantttitle{\tiny MAR}{1}
-            \gantttitle{\tiny ABR}{1}
-            \gantttitle{\tiny MIO}{1}
-            \gantttitle{\tiny JUN}{1}
-            \gantttitle{\tiny JUL}{1}
-            \gantttitle{\tiny AGO}{1}
-            \gantttitle{\tiny SET}{1}
-            \gantttitle{\tiny OUT}{1}
-            \gantttitle{\tiny NOV}{1}
-            \gantttitle{\tiny DEZ}{1}\\
-            %tasks
-            % Tercceira técnica
-            \ganttbar[bar/.style={fill=blue},bar label font=\color{blue}]{\RTLAtvAlgRotI}{1}{2} \\
-            \ganttbar[bar/.style={fill=blue},bar label font=\color{blue}]{\RTLAtvAlgRotII}{3}{4} \\
-            \ganttbar[bar/.style={fill=blue},bar label font=\color{blue}]{\RTLAtvAlgRotIII}{5}{6} \\
-            \ganttbar[bar/.style={fill=blue},bar label font=\color{blue}]{\RTLAtvAlgRotIV}{7}{8} \\
-            \ganttbar[bar/.style={fill=blue},bar label font=\color{blue}]{\RTLAtvAlgRotV}{9}{10} \\
-            \ganttbar[bar/.style={fill=blue},bar label font=\color{blue}]{\RTLAtvAlgRotVI}{11}{12} \\
-            \ganttbar[bar/.style={fill=green},bar label font=\color{green}]{\RTLAtvAlgRotVII}{3}{11}
-        \end{ganttchart}
-    \end{center}
-    \caption{Diagrama de tempos das atividades a efetuar para o desenvolvimento do plano de trabalho. }
+\begin{table}[]
+    \caption{Diagrama de tempo das atividades a serem efetuadas}
+    \begin{tabular}{|l|llll|llll|llll|llll|llll|}
+        \hline
+        Meses       & \multicolumn{4}{l|}{Abril}               & \multicolumn{4}{l|}{Maio}                & \multicolumn{4}{l|}{Junho}               & \multicolumn{4}{l|}{Julho}               & \multicolumn{4}{l|}{Agosto}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
+        Semanas     & \multicolumn{1}{l|}{1}                   & \multicolumn{1}{l|}{2}                   & \multicolumn{1}{l|}{3}                   & \multicolumn{1}{l|}{4}                   & \multicolumn{1}{l|}{1}                   & \multicolumn{1}{l|}{2}                   & \multicolumn{1}{l|}{3}                   & \multicolumn{1}{l|}{4}                   & \multicolumn{1}{l|}{1}                   & \multicolumn{1}{l|}{2}                   & \multicolumn{1}{l|}{3}                   & \multicolumn{1}{l|}{4}                   & \multicolumn{1}{l|}{1}                   & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{3}                   & \multicolumn{1}{l|}{4}                   & \multicolumn{1}{l|}{1}                   & \multicolumn{1}{l|}{2}                   & \multicolumn{1}{l|}{3}                   & \multicolumn{1}{l|}{4}                   \\ \hline
+        Atividade 1 & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    &                                          & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    \\ \hline
+        Atividade 2 & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    \\ \hline
+        Atividade 3 & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    \\ \hline
+        Atividade 4 & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    \\ \hline
+        Atividade 5 & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    \\ \hline
+        Atividade 6 & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{\cellcolor{gray!50}} & \multicolumn{1}{l|}{}                    \\ \hline
+        Atividade 7 & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{}                    & \multicolumn{1}{l|}{\cellcolor{gray!50}} \\ \hline
+    \end{tabular}
+    \legend{Fonte: Produção do próprio autor.}
     \label{figDAGRTEMPACT001}
-\end{figure}
+\end{table}
