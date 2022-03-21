@@ -1,23 +1,25 @@
 A pesquisa e a otimização de bancos de dados são assuntos em alta
 na área da computação há décadas, estando presentes em todos os
 tipos de sistemas e aplicativos utilizados mundialmente. No
-entanto, conforme a industria se solidifica e amadurece, a
+entanto, conforme a indústria se solidifica e amadurece, a
 competitividade e a necessidade de sistemas mais eficientes
 também aumentam.
 
 Um problema de bancos de dados pode ser entendido como um
 problema de grafos quando analisa-se não só os valores a serem
 armazenados, mas suas conexões e relações \cite{graph-relation}.
+
 O primeiro artigo sobre grafos foi escrito pelo matemático
 Leonard Euler, em 1736, enquanto tentava descobrir se era
 possível atravessar as sete pontes da cidade de
 \textit{Königsberg}, na Prússia, sem repetir nenhuma
-\cite{graphteory}.  A \autoref{euler-ponte} ilustra o problema.
+\cite{graphteory}. A \autoref{euler-ponte} ilustra o problema.
 Euler abstraiu os possíveis caminhos das pontes em retas e suas
 intersecções em pontos, criando, talvez, o primeiro Grafo da
-história. Desde então, o tema tem ganhado cada vez mais tração,
-por ser altamente utilizado para abstração de relações entre
-objetos, principalmente no âmbito da computação.
+história. Desde então, o tema tem ganhado cada vez mais
+relevância, por ser altamente utilizado para abstração de
+relações entre objetos, principalmente nos âmbitos da computação
+e telecomunicações.
 
 \begin{figure}[!htbp]
     \begin{center}
@@ -27,12 +29,35 @@ objetos, principalmente no âmbito da computação.
     \end{center}
 \end{figure}
 
-Dentro destes cenários, surge a necessidade de armazenar dados de
-grafos em bancos de dados. No entanto, quando se lida com grafos
-com grande volume de dados, é preciso identificar o melhor SGBD
-para consulta, visando a rapidez do sistema.
+O crescimento da Teoria de Grafos e a necessidade de modelar
+sistemas complexos e volumosos de forma eficiente torna possível
+a modelagem de redes de telecomunicações utilizando grafos, onde
+nós são representados por pontos interligados na rede e arestas
+as suas ligações. No entanto, pela necessidade de rapidez da
+análise dos dados armazenados, e, lidando com grandes volumes de
+dados, faz-se preciso identificar o melhor SGDB para consulta das
+principais características no contexto de redes de
+telecomunicações, como tamanho, grau, grau máximo, grau médio,
+diâmetro, distância média e variância de grau.
 
 Sendo assim, este trabalho propõe implementar e testar os
-principais SGBD para consultas costumeiras de bancos de grafos,
-analisar os resultados e definir o mais eficiente e adequado à
-situação.
+principais SGBD, como, MariaDB, mySQL, MongoDB, PostgreSQL, para
+consultas costumeiras de bancos de grafos de redes de
+telecomunicações, analisar os resultados e definir o mais
+eficiente e adequado à situação.
+
+% Dentro destes cenários da necessidade de armazenar sistemas de
+% forma eficiente e , surge a necessidade de armazenar grandes
+% modelagens de redes de telecomunicações em forma de grafos. No
+% entanto, quando se lida com grafos com grande volume de dados
+
+
+% surge a necessidade de armazenar dados de grafos em bancos de
+% dados. No entanto, quando se lida com grafos com grande volume de
+% dados, é preciso identificar o melhor SGBD para consulta, visando
+% a rapidez do sistema.
+
+% Sendo assim, este trabalho propõe implementar e testar os
+% principais SGBD para consultas costumeiras de bancos de grafos,
+% analisar os resultados e definir o mais eficiente e adequado à
+% situação.

@@ -1,0 +1,9 @@
+Para a realização do treinamento dos classificadores e validação dos resultados, é necessária uma base de dados consolidada na literatura. 
+Portanto, foram analisadas as bases de dados mais utilizadas em trabalhos com objetivos semelhantes, chegando a escolha da base xxxxx.
+
+\textbf{1. \txr{Aqui é feita a descripção do banco de dados usados.}}
+É uma base de dados desenvolvida pela xxxxx. 
+Esta base foi criada por xxx, e contém $322$ imagens de $8$ bits de contraste ($256$ níveis de cinza) e $0,050$ mm de resolução. 
+
+\textbf{2. \txr{Descrição dos conjuntos de treino, validação e teste}}
+As imagens usadas para o treinamento foram divididas em dois conjuntos: treinamento e validação. O conjunto de validação tem XXX do número total de janelas. Para cada uma das $60$ imagens do conjunto de treinamento foram extraídas aleatoriamente $100$ \textit{patches} como amostras \textbf{positivas} e $100$ \textit{patches} como amostras \textbf{negativas}. Nos casos em que o \textit{patch} tinha pixels fora da imagem, ele foi preenchido usando \textit{padding} espelhado. Todos os \textit{patches} possuem dimensões de $27 \times 27 \times 3$ pixels.

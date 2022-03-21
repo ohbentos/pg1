@@ -2,10 +2,10 @@
 Um grafo G qualquer é composto de um conjunto de nós (também
 chamados de pontos ou vértices) ligados a outros nós por meio de
 arestas, que representam uma ligação atrelada a uma relação entre
-os nós \cite{west_2018}. A figura \autoref{meu-grafo} ilustra um
-Grafo de seis nós {$n1,n2,n3,n4,n5,n6$} cujas ligações podem ser
+os nós \cite{west_2018}. A \autoref{meu-grafo} ilustra um
+Grafo de seis nós {$N1,N2,N3,N4,N5,N6$} cujas ligações podem ser
 representadas pelos nós percententes àquela aresta, portanto,
-{$n4n1,n1n5,n1n6,n6n2,n2n3$} são as arestas do Grafo ilustrado.
+{$N4N1,N1N5,N1N6,N6N2,N2N3$} são as arestas do Grafo ilustrado.
 
 
 \begin{figure}[!htbp]
@@ -17,43 +17,53 @@ representadas pelos nós percententes àquela aresta, portanto,
 \end{figure}
 
 
-% De acordo com \cite{diestel_2017}, alguns conceitos fundamentais de grafos:
-Alguns conceitos fundamentais de grafos, de acordo com
-\citeonline{diestel_2017}
+Definições de acordo com \citeonline{diestel_2017} de conceitos
+amplamentes utilizados em modelagens de redes de telecomunicações
+com grafos e ilustrados pela \autoref{meu-grafo}:
 
 \begin{itemize}
 	\item
-	      \textbf{Ordem} : indica o número de vértices de um grafo.
+	      \textbf{Ordem} : indica o número de vértices de um
+	      grafo. O grafo ilustrado possui ordem igual
+	      a 6.
 	\item
-	      \textbf{Extremos} : dois vértices que formam uma
-	      aresta são chamados de extremos.
+	      \textbf{Tamanho} : soma das arestas e vértices. O grafo
+	      ilustrado possui tamanho igual a 11.
+	\item \textbf{Grau} : o grau de um vértice é o número de
+	      arestas que o conectam. O grau do vértice $N1$ é 3,
+	      enquanto o grau do vértice $N4$ é 1.
 	\item
-	      \textbf{Adjacência} : dois vértices $x,y$ de G são
-	      adjacentes quando a aresta $xy$ percente a G; duas
-	      arestas são adjacentes se possuem um fim em comum.
+	      \textbf{Grau Máximo} : é o maior grau dos vértices do
+	      grafo. O grau máximo do grafo ilustrado é 3.
 	\item
-	      \textbf{Incidência} : se um vértice é o extremo de um
-	      nó, eles são incidentes.
+	      \textbf{Grau Médio} :  é a média aritmética dos graus
+	      de cada vértice. O grau médio do grafo ilustrado é
+	      10/6.
 	\item
-	      \textbf{Caminho} : é uma sequência de nós que une uma
-	      sequência distinta de arestas.
+	      \textbf{Diâmetro} : é a maior distância entre dois
+	      vértices. O diâmetro de N1 e N2 é de 2 arestas.
 	\item
-	      \textbf{Distância} : é o menor número de arestas entre
-	      dois nós.
+	      \textbf{Distância Média} : é a média aritmética das
+	      distâncias de todos os pares de vértices de um grafo.
+	      A distância média do grafo ilustrado é 26/15.
 	\item
-	      \textbf{Diâmetro} : é o maior número de arestas
-	      distintas que se atravessa entre dois nós.
+	      \textbf{Conectividade De Vértices} : é o menor número
+	      de vértices que podem ser removidos para desconectar o
+	      grafo. O grafo ilustrado possui conectividade igual a 1.
 	\item
-	      \textbf{\textit{Loop}} : é uma aresta que conecta um nó
-	      a si mesmo.
-
+	      \textbf{Variância de Grau}: é a variância de todos os
+	      graus dos vértices. O grafo ilustrado possui variância
+	      de grau igual a 2/3.
 
 \end{itemize}
 
 Na ciência da computação, grafos são utilizados em estruturas de
 dados para a representação de redes de telecomunicações,
 problemas de logística, design de circuitos elétricos, diagramas
-de árvore, árvore de decisões, algoritmo de Dijkstra, etc.
+de árvore, árvore de decisões, algoritmo de Dijkstra, etc. Neste
+trabalho os dados de grafos representam grandes redes de
+telecomunicações, com nós representando pontos fixos como
+roteadores, e suas ligações, representadas por arestas.
 
 \section{Bancos de Dados}
 De acordo com \citeonline{database_2011}, bancos de dados são
@@ -65,17 +75,17 @@ com bancos de dados ao navegar na internet, mesmo que
 inconscientemente.
 
 
-Os SGBD são úteis para proporcionar formas de armazenar e retirar
-informações de bancos de forma forma simples e eficiênte, ou
-seja, são responsáveis pelo gerenciamento dos bancos de dado.
-Permitem ao usuário criar e especificar esquemas (forma na qual
+Os SGBD são úteis para proporcionar formas de armazenar e obter
+informações de bancos de forma simples e eficiente, ou seja, são
+responsáveis pelo gerenciamento dos bancos de dados. SGDB
+permitem ao usuário criar e especificar esquemas (forma na qual
 os dados estão organizados) para os dados, fazer consultas ao
 banco, fazer consultas concorrentes aos mesmos dados, etc
-\cite{database-complete}. Em suma, provê ao usuário uma interface mais
-abstrata entre os dados e a aplicação.
+\cite{database-complete}. Em suma, provê ao usuário uma interface
+mais abstrata entre os dados e a aplicação.
 
 
-Em 1970, Ted Codd, um matemático e pesquisador da IBM propôs que
+Em 1970, Ted Codd, um matemático e pesquisador da IBM, propôs que
 os sistemas de bancos de dados apresentassem aos usuários dados
 organizados em forma de tabelas chamadas relações \cite{codd},
 que são conexões lógicas entre diferentes tabelas, baseadas em
@@ -89,4 +99,14 @@ linhas de diferentes tabelas gerando uma chave estrangeira.
 A linguagem de programação dominante, utilizada por praticamente
 todos os bancos de dados relacionais, é a linguagem SQL
 (\textit{Structured Query Language}), responsável pela
-administração de permissões, consulta e manipulação dos dados.
+administração de permissões, consulta e manipulação dos dados. Já
+bancos de dados não-relacionais (NoSQL) não necessitam de
+esquemas. Podem armazenar qualquer estrutura necessária, podendo
+alterá-la. Bancos de dados NoSQL possuem alta escalabilidade,
+isto é, aumentar seu volume de dados não impacta muito o
+desempenho. Apesar de serem menos escaláveis, os bancos de dados
+relacionais são melhores para tarefas que lidam com requerimentos
+complexos de relações entre os dados para modelação de sistemas
+igualmente complexos.
+
+% Neste trabalho serão feitos experimentos com os bancos relacionais

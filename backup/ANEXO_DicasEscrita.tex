@@ -1,0 +1,149 @@
+\section{Dicas}
+\label{sec:DicasEscrita}
+
+Sobre \LaTeX
+\begin{itemize}
+\item 
+\txr{\textbf{DICA:}}  Para trocar o ABNT para citação alfanumérica usar: 
+
+\verb|\usepackage[alf]{abntex2cite}|
+
+Este pacote esta localizado no inicio do documento \verb|PG_TEMPLATE.tex|.
+\item 
+\txr{\textbf{DICA:}} Para saber como fazer as referencias em LATEX ver: \url{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}.
+
+Ver os seguintes exemplos de citação
+\begin{itemize}
+\item 
+Em \citeonline{zinkevichetal2010} os autores confirmam ...
+\end{itemize}
+\item 
+\txr{\textbf{DICA:}} Para fazer comentários em blocos usar: \verb|CTRL + /| Obs: O barra usado no comando é o do teclado numérico.
+\item 
+\txr{\textbf{DICA:}} para usar variáveis matemáticas no texto usar o \verb|$|, por exemplo: na equação \verb|$x = \sqrt{\frac{a}{b}}$|, então, \verb|$y = \sin(x)$|.
+\item 
+\txr{\textbf{DICA:}} Em latex fica mais elegante usar $56 \times 56$ no lugar de 56 x 56.
+\item 
+\txr{\textbf{DICA:}} este template é configuravel para PG ou TCC, para trocar entre um formato e outro (respeitando o já escrito), deve-se fazer uso das variáveis logicas (localizadas nas linhas 129 e 130 do arquivo \verb|000_MAIN.tex|):
+\begin{itemize}
+\item 
+\verb|\isTipoDocumentotrue %PG| descomentado para ativar o formato de PG.
+\item 
+\verb|\isTipoDocumentofalse %TCC| descomentado para ativar o formato de PG.
+\end{itemize}
+\end{itemize}
+
+Exemplos de diferentes ambientes de equações:
+% lembrar de usar \usepackage{amsmath} no preambulo
+% mais ambientes em: https://pt.overleaf.com/learn/latex/Aligning_equations_with_amsmath
+
+\begin{itemize}
+
+    \item Equação centralizada e enumerada
+        \begin{equation}
+            \Delta = b^2-4 \cdot a \cdot c 
+        \end{equation}
+
+    \item Equação centralizada sem numeração
+        \begin{equation*}
+            \Delta = b^2 - 4 \cdot a \cdot c 
+        \end{equation*}
+        $$ \lim_{n\to\infty}x_n=0 $$
+        $$ \textstyle \lim_{n\to\infty}x_n=0 $$
+        
+    \item Desenvolvimento de equações
+        \begin{gather*}
+            F_{cp} = \frac{m \cdot V^2}{R} \implies \frac{m \cdot V^2}{d \cdot \frac{\sqrt{3}}{3}} = \frac{G \cdot m^2}{d} \cdot \sqrt{3} \implies \frac{3 \cdot m \cdot V^2}{d \cdot \sqrt{3}} = \frac {G \cdot m^2 \cdot \sqrt{3}}{d^2}\\
+            V^2 = \frac{G \cdot m}{2} \implies \boxed{V = \sqrt{\frac{G \cdot m}{d}}}
+        \end{gather*}
+    
+    \item Equação no texto comprimida (textstyle)
+
+        O limite é $\lim_{n\to\infty}x_n=0$.
+        
+        A integral é $ \int_a^b f(x) dx = \lim_{n \rightarrow
+\infty} \sum_{i=0}^n f(x_i^*) \cdot \frac{b-a}{n}$.
+        
+        A relação $\frac{a}{b}$ vale 2.
+    
+    \item Equação no texto em tamanho normal (displaystyle)
+
+        O limite é $\displaystyle \lim_{n\to\infty}x_n=0$.
+        
+        A integral é $ \displaystyle  \int_a^b f(x) dx = \lim_{n \rightarrow
+\infty} \sum_{i=0}^n f(x_i^*) \cdot \frac{b-a}{n}$.
+        
+        A relação $\left (\dfrac{a}{b} \right )$ vale 2.
+        
+        A relação $ ( \dfrac{a}{b} )$ vale 2.
+
+\end{itemize}
+% Site para criar equações em Latex: https://www.codecogs.com/latex/eqneditor.php?lang=pt-br
+% Site para simbolos matematicos Latex: https://latex.wikia.org/wiki/Main_page
+% App para copiar códigos Latex de equações da internet: https://mathpix.com/
+
+Exemplo de algoritmo:
+% lembrar de usar \usepackage[linesnumbered]{algorithm2e} no preambulo
+% mais estilos de algoritmos em: https://ctan.dcc.uchile.cl/macros/latex/contrib/algorithm2e/doc/algorithm2e.pdf
+
+\begin{algorithm}[H]
+    \SetAlgoLined
+    \KwData{this text}
+    \KwResult{how to write algorithm with \LaTeX2e }
+        initialization\;
+    \While{not at end of this document}{
+        read current\;
+    \eIf{understand}{
+        go to next section\;
+        current section becomes this one\;
+    }{
+        go back to the beginning of current section\;
+    }
+    \If{$\Delta$ == true}{
+        show the match}
+    }
+    \caption{How to write algorithms}
+\end{algorithm}
+
+
+
+
+
+Sobre a escrita:
+%http://posgraduando.com/dez-dicas-para-escrever-artigos-cientificos/
+%https://wiki.sj.ifsc.edu.br/wiki/index.php/Dicas_para_escrita_de_texto_cient%C3%ADfico
+
+\begin{itemize}
+\item 
+\txr{\textbf{DICA:}}  O trabalho científico deve ter um caráter formal e impessoal. Por conta disso, deve-se evitar a construção da oração na primeira ou terceira pessoa do singular. Assim, por exemplo, deve-se utilizar as seguintes expressões: \ASPADUPLA{conclui-se que}, \ASPADUPLA{percebe-se pela leitura do equipamento}, \ASPADUPLA{é válido supor}, \ASPADUPLA{ter-se-ia de dizer}, \ASPADUPLA{verificar-se-á} etc. Não é adequado, portanto, dizer: \ASPADUPLA{conforme vimos no item anterior}. Diz-se: \ASPADUPLA{conforme visto no item anterior}, ou, em vez de \ASPADUPLA{dissemos que}, \ASPADUPLA{foi dito que} etc.
+\item 
+\txr{\textbf{DICA:}} 
+Evitar o uso de palavras que mostram significados abstratos (a menos que se efetue uma definição antes de seu uso), por exemplo: \ASPADUPLA{bom}, \ASPADUPLA{confiável}.
+\item 
+\txr{\textbf{DICA:}} Palavras em idioma estrangeiro necessariamente devem estar em italica, por exemplo: \textit{patch}, \textit{frame}, \textit{pipeline}.
+\item 
+\txr{\textbf{DICA:}} Para referir um termo em ingles usando siglas a formatação recomendada é: \verb|Nome em inglês - SIGLAS (tradução livre, Nome em português)|.
+\item 
+\txr{\textbf{DICA:}} Uma vez que declarada uma sigla ela deve ser usada por extenso no escrito.
+\item 
+\txr{\textbf{DICA:}} Toda Equação, Figura e Tabela no momento de ser referenciada deve iniciar em caixa alta, por exemplo: \verb|....na Equação ...|, \verb|....na Figura ...|, \verb|....na Tabela ...|. 
+\item 
+\txr{\textbf{DICA:}} Para referenciar uma Equação no texto usar o comando \verb|\eqref{}|. Por exemplo: 
+\verb|.... na Equação \eqref{labelDaEquação} é ...|. 
+\item 
+\txr{\textbf{DICA:}} Toda Figura e Tabela deve ser referenciada no texto, para isso, deve-se usar o comando \verb|\ref{}|. Por exemplo: 
+\verb|.... na Figura \ref{labelDaFigura} é mostrado ...|,  
+\verb|....tal como é indicado na Tabela \ref{labelDaTabela} concluímos...|. 
+\item 
+\txr{\textbf{DICA:}} Os objetivos específicos devem casar completamente com o cronograma.
+\item 
+\txr{\textbf{DICA:}} Um bom escrito é um reflexo das leituras feitas sobre o tema em estudo, então, é prioritário ler bastante sobre o tema a dissertar.
+\end{itemize}
+
+Sobre as regras da correção do documento:
+\begin{itemize}
+\item 
+\txr{\textbf{REGRA:}} Unicamente o orientador pode apagar as indicações/recomendações escritas em \txr{vermelho}. as \txr{DICAS} e \txr{COMENTARIO GERAL:} podem ser comentadas (usando \verb|\%|) depois de ser estudadas.
+\item 
+\txr{\textbf{REGRA:}} texto em \txb{AZUL}, indica modificações no escrito feitas pelo (co)orientador ou paragrafes com inconsistências, podem ser coloridas a \textbf{PRETO} uma vez estudado/corregido o problema.
+\end{itemize}
