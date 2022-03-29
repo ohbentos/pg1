@@ -1,30 +1,29 @@
 \vspace{-42pt}
 
 Com o crescimento e popularização da internet, que se tornou uma
-ncessidade tanto industrial quanto doméstica, as malhas de redes
+necessidade tanto industrial quanto doméstica, as malhas de redes
 de telecomunicações vêm se tornando cada vez mais extensas e
-complexas, por exemplo, a RNP (Rede Nacional de Ensino e
+complexas. Por exemplo, a RNP (Rede Nacional de Ensino e
 Pesquisa) aumentou a capacidade em 244\% de 2010 para 2011,
-conforme ilustra a \autoref{rnp-2011}, atingindo 213,2 Gb/s, e,
-em 2018, quase triplicou a capacidade, atingindo 601 Gb/s,
-conforme ilustra a \autoref{rnp-2011}. A rede eduroam é parte da
-RNP e está disponível em universidades, centros de pesquisa,
-hospitais e centros públicos. Conta com mais de 3 mil pontos de
-acesso no Brasil e está presente em diversos países no mundo
-\cite{rnp}.
+conforme ilustra a Figura\autoref{rnp-2011}(a), atingindo 213,2
+Gb/s, e, em 2018, quase triplicou a capacidade, atingindo 601
+Gb/s, conforme ilustra a Figura\autoref{rnp-2011}(b). A rede
+eduroam é parte da RNP e está disponível em universidades,
+centros de pesquisa, hospitais e centros públicos. Conta com mais
+de 3 mil pontos de acesso no Brasil e está presente em diversos
+países no mundo \cite{rnp}.
 
-
-\begin{figure}[!htbp]
-    \begin{center}
-        \caption{\label{rnp-2011}Evolução da rede RNP}
-        \includegraphics[scale=0.05]{rnp-2011.jpeg}
-        \includegraphics[scale=0.15]{rnp-2018.jpeg}
-        \legend{Fonte: RNP, 2022}
-    \end{center}
+\begin{figure}[!h]%
+  \centering
+  \caption{Evolução da rede RNP}%
+  \subfloat[\centering Rede RNP em 2011]{{\includegraphics[width=7cm]{rnp-2011.jpeg} }}%
+  \qquad
+  \subfloat[\centering Rede RNP em 2018]{{\includegraphics[width=7cm]{rnp-2018.jpeg} }}%
+  \legend{Fonte: \citeonline{rnp}}
+  \label{rnp-2011}%
 \end{figure}
 
-
-O crescimento e das redes de telecomunicações e seu consequente
+O crescimento das redes de telecomunicações e seu consequente
 aumento de complexidade leva à necessidade de criação de sistemas
 de armazenamento de dados eficientes, capazes de oferecer rapidez
 e confiabilidade. O processamento destes dados só é possível se o
@@ -35,7 +34,7 @@ que os bancos de dados revelam-se fundamentais.
 
 Ter conhecimento sobre o SGBD mais adequado a cada tipo de dado,
 portanto, é fundamental para garantir a rapidez e a efetividade
-dos sistemas. Neste trabalho, o objetivo é encontrar o SGDB com
+dos sistemas. Neste trabalho, o objetivo é encontrar o SGBD com
 melhor desempenho para utilização nas diferentes consultas a
-bancos de dados de redes de telecomunicações modelados como
-grafos com dados altamente volumosos.
+bancos de dados de redes de telecomunicações com um grande volume
+de grafos relativamente pequenos (entre dez e vinte vértices).

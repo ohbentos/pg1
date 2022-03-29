@@ -3,71 +3,72 @@ Um grafo G qualquer é composto de um conjunto de nós (também
 chamados de pontos ou vértices) ligados a outros nós por meio de
 arestas, que representam uma ligação atrelada a uma relação entre
 os nós \cite{west_2018}. A \autoref{meu-grafo} ilustra um
-Grafo de seis nós {$N1,N2,N3,N4,N5,N6$} cujas ligações podem ser
+grafo de seis nós {$N1,N2,N3,N4,N5,N6$} cujas ligações podem ser
 representadas pelos nós percententes àquela aresta, portanto,
-{$N4N1,N1N5,N1N6,N6N2,N2N3$} são as arestas do Grafo ilustrado.
+{$N4N1,N1N5,N1N6,N6N2,N2N3$} são as arestas do grafo ilustrado.
 
 
-\begin{figure}[!htbp]
-	\begin{center}
-		\caption{\label{meu-grafo}Exemplo de Grafo com seis nós}
-		\includegraphics[scale=0.5]{meu-grafo.png}
-		\legend{Fonte: Produção do próprio autor.}
-	\end{center}
+\begin{figure}[!h]
+      \begin{center}
+            \caption{\label{meu-grafo}Exemplo de grafo com seis nós}
+            \includegraphics[width=0.7\textwidth]{meu-grafo.png}
+            \legend{Fonte: Produção do próprio autor.}
+      \end{center}
 \end{figure}
 
 
 Definições de acordo com \citeonline{diestel_2017} de conceitos
 amplamentes utilizados em modelagens de redes de telecomunicações
-com grafos e ilustrados pela \autoref{meu-grafo}:
+com grafos, ilustrados utilizando o grafo da \autoref{meu-grafo}:
 
 \begin{itemize}
-	\item
-	      \textbf{Ordem} : indica o número de vértices de um
-	      grafo. O grafo ilustrado possui ordem igual
-	      a 6.
-	\item
-	      \textbf{Tamanho} : soma das arestas e vértices. O grafo
-	      ilustrado possui tamanho igual a 11.
-	\item \textbf{Grau} : o grau de um vértice é o número de
-	      arestas que o conectam. O grau do vértice $N1$ é 3,
-	      enquanto o grau do vértice $N4$ é 1.
-	\item
-	      \textbf{Grau Máximo} : é o maior grau dos vértices do
-	      grafo. O grau máximo do grafo ilustrado é 3.
-	\item
-	      \textbf{Grau Médio} :  é a média aritmética dos graus
-	      de cada vértice. O grau médio do grafo ilustrado é
-	      10/6.
-	\item
-	      \textbf{Diâmetro} : é a maior distância entre dois
-	      vértices. O diâmetro de N1 e N2 é de 2 arestas.
-	\item
-	      \textbf{Distância Média} : é a média aritmética das
-	      distâncias de todos os pares de vértices de um grafo.
-	      A distância média do grafo ilustrado é 26/15.
-	\item
-	      \textbf{Conectividade De Vértices} : é o menor número
-	      de vértices que podem ser removidos para desconectar o
-	      grafo. O grafo ilustrado possui conectividade igual a 1.
-	\item
-	      \textbf{Variância de Grau}: é a variância de todos os
-	      graus dos vértices. O grafo ilustrado possui variância
-	      de grau igual a 2/3.
+      \item
+            \textbf{Ordem} : indica o número de vértices de um
+            grafo. O grafo ilustrado possui ordem igual
+            a 6.
+      \item
+            \textbf{Tamanho} : indica o número de arestas de um
+            grafo. O grafo ilustrado possui tamanho igual a 5.
+      \item \textbf{Grau} : o grau de um vértice é o número de
+            arestas que o conectam. O grau do vértice $N1$ é 3,
+            enquanto o grau do vértice $N4$ é 1.
+      \item
+            \textbf{Grau Máximo} : é o maior grau dos vértices do
+            grafo. O grau máximo do grafo ilustrado é 3.
+      \item
+            \textbf{Grau Médio} :  é a média aritmética dos graus
+            de cada vértice. O grau médio do grafo ilustrado é
+            10/6.
+      \item
+            \textbf{Diâmetro} : é a maior distância entre quaisquer dois
+            vértices. O diâmetro do grafo ilustrado é 4.
+      \item
+            \textbf{Distância Média} : é a média aritmética das
+            distâncias de todos os pares de vértices de um grafo.
+            A distância média do grafo ilustrado é 26/15.
+      \item
+            \textbf{Conectividade de Vértices} : é o menor número
+            de vértices que podem ser removidos para desconectar o
+            grafo. O grafo ilustrado possui conectividade igual a 1.
+      \item
+            \textbf{Variância de Grau}: é a variância de todos os
+            graus dos vértices. O grafo ilustrado possui variância
+            de grau igual a 2/3.
 
 \end{itemize}
 
 Na ciência da computação, grafos são utilizados em estruturas de
 dados para a representação de redes de telecomunicações,
-problemas de logística, design de circuitos elétricos, diagramas
-de árvore, árvore de decisões, algoritmo de Dijkstra, etc. Neste
-trabalho os dados de grafos representam grandes redes de
-telecomunicações, com nós representando pontos fixos como
-roteadores, e suas ligações, representadas por arestas.
+problemas de logística, \textit{design} de circuitos elétricos,
+diagramas de árvore, árvore de decisões, algoritmo de Dijkstra,
+etc. Neste trabalho os dados de grafos representam várias
+pequenas redes de telecomunicações (entre dez a vinte vértices),
+com nós representando pontos fixos como roteadores, e suas
+ligações, representadas por arestas.
 
 \section{Bancos de Dados}
 De acordo com \citeonline{database_2011}, bancos de dados são
-estruturas que contêm dados inter-relacionados, tipicamente
+estruturas que contém dados inter-relacionados, tipicamente
 armazenados eletronicamente em sistemas de computadores,
 gerenciados por SGBD. Constituem parte essencial de qualquer
 comércio na atualidade, pois a todo momento usuários interagem
@@ -77,7 +78,7 @@ inconscientemente.
 
 Os SGBD são úteis para proporcionar formas de armazenar e obter
 informações de bancos de forma simples e eficiente, ou seja, são
-responsáveis pelo gerenciamento dos bancos de dados. SGDB
+responsáveis pelo gerenciamento dos bancos de dados. SGBD
 permitem ao usuário criar e especificar esquemas (forma na qual
 os dados estão organizados) para os dados, fazer consultas ao
 banco, fazer consultas concorrentes aos mesmos dados, etc
@@ -109,4 +110,16 @@ relacionais são melhores para tarefas que lidam com requerimentos
 complexos de relações entre os dados para modelação de sistemas
 igualmente complexos.
 
+
+As principais diferenças entre os SGBD testados neste trabalho
+são quanto ao tipo, ou seja, relacional ou não-relacional, à
+capacidade e facilidade de escalabilidade, à licença de uso e aos
+tipos de dados suportados. Todos os SGBD testados possuem licença
+de uso compatível com o uso proposto. Dos bancos de dados
+citados, são relacionais: MariaDB, mySQL, PostgreSQL; logo,
+utilizam a linguagem SQL e possuem pior escalabilidade, porém,
+são capazes de estabelecer relações complexas entre suas tabelas.
+Já MongoDB é NoSQL, possui melhor escalabilidade e armazena
+qualquer tipo de arquivo, porém, não possui a capacidade de
+estabelecer relações tão complexas.
 % Neste trabalho serão feitos experimentos com os bancos relacionais
